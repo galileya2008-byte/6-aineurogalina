@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Создание ИИ-агентов для бизнеса, экспертов и жизни — 6 поток</title>
+  <meta name="description" content="Освойте создание ИИ-агентов без программирования. Более 50 готовых решений, монетизация навыков, старт 26 июня.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Onest:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#" class="logo">ИИ-Агенты</a>
+      <nav class="nav" id="nav">
+        <a href="#quiz">Опрос</a>
+        <a href="#program">Программа</a>
+        <a href="#calculator">Калькулятор</a>
+        <a href="#pricing">Стоимость</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a href="#pricing" class="btn btn--sm">Забронировать</a>
+      <button class="burger" id="burger" aria-label="Меню">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero__mesh" aria-hidden="true"></div>
+      <div class="hero__grid-lines" aria-hidden="true"></div>
+      <div class="container hero__layout">
+        <div class="hero__content">
+          <div class="hero__badge">6 поток · Старт 26 июня</div>
+          <h1 class="hero__title">
+            <span class="hero__title-line">Создавайте</span>
+            <span class="hero__title-line">ИИ-агентов</span>
+            <span class="hero__title-line hero__title-line--accent"><em>для себя и клиентов</em></span>
+          </h1>
+          <p class="hero__subtitle">
+            Освойте навык, который помогает бизнесу экономить время, увеличивать эффективность
+            и автоматизировать рутинные задачи — без программирования.
+          </p>
+          <p class="hero__desc">
+            Цифровые помощники для маркетинга, продаж, экспертов, творческих специалистов
+            и повседневной жизни.
+          </p>
+          <div class="hero__price">
+            <span class="hero__price-label">До 20 июня</span>
+            <span class="hero__price-value">30 000 ₽</span>
+            <span class="hero__price-old">45 000 ₽</span>
+          </div>
+          <p class="hero__installment">Рассрочка на 12 мес — <strong>2 500 ₽/мес</strong></p>
+          <div class="hero__tags">
+            <span>Рассрочка</span>
+            <span>Поэтапная оплата</span>
+            <span>Поддержка и практика</span>
+          </div>
+          <div class="hero__actions">
+            <a href="https://neirogalina.ru/page245" class="btn btn--magnetic" target="_blank" rel="noopener noreferrer">Забронировать место</a>
+            <a href="#quiz" class="btn btn--ghost">Пройти опрос</a>
+          </div>
+          <p class="hero__alumni">Выпускникам прошлых потоков — <a href="https://neirogalina.ru/page237" target="_blank" rel="noopener noreferrer">обновление за 5 000 ₽</a></p>
+        </div>
+        <div class="hero__visual" aria-hidden="true">
+          <div class="hero__ring">
+            <svg viewBox="0 0 400 400" class="hero__ring-svg">
+              <circle cx="200" cy="200" r="180" fill="none" stroke="currentColor" stroke-width="0.5" stroke-dasharray="4 8"/>
+              <circle cx="200" cy="200" r="140" fill="none" stroke="currentColor" stroke-width="0.5" opacity="0.5"/>
+            </svg>
+            <div class="hero__ring-center">
+              <span class="hero__ring-num" data-count="50">50</span>
+              <span class="hero__ring-label">готовых<br>решений</span>
+            </div>
+          </div>
+          <div class="agent-chip agent-chip--1">SMM-стратег</div>
+          <div class="agent-chip agent-chip--2">AI-продажник</div>
+          <div class="agent-chip agent-chip--3">Контент-маркетолог</div>
+          <div class="agent-chip agent-chip--4">Методолог</div>
+          <div class="agent-chip agent-chip--5">Личный ассистент</div>
+        </div>
+      </div>
+      <div class="hero__scroll">
+        <span>Программа</span>
+        <div class="hero__scroll-line"></div>
+      </div>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>8 модулей</span><span class="marquee__dot">◆</span>
+        <span>50+ AI-агентов</span><span class="marquee__dot">◆</span>
+        <span>Монетизация навыков</span><span class="marquee__dot">◆</span>
+        <span>Без программирования</span><span class="marquee__dot">◆</span>
+        <span>Старт 26 июня</span><span class="marquee__dot">◆</span>
+        <span>8 модулей</span><span class="marquee__dot">◆</span>
+        <span>50+ AI-агентов</span><span class="marquee__dot">◆</span>
+        <span>Монетизация навыков</span><span class="marquee__dot">◆</span>
+        <span>Без программирования</span><span class="marquee__dot">◆</span>
+        <span>Старт 26 июня</span><span class="marquee__dot">◆</span>
+      </div>
+    </div>
+
+    <!-- Quiz -->
+    <section class="section section--quiz reveal" id="quiz">
+      <div class="container container--narrow">
+        <div class="section__header section__header--center">
+          <span class="section__label">Интерактив</span>
+          <h2>Какой AI-агент вам нужен первым?</h2>
+          <p class="section__desc">4 вопроса — и персональная рекомендация с идеей заработка</p>
+        </div>
+
+        <div class="quiz" id="quizApp">
+          <div class="quiz__progress">
+            <div class="quiz__progress-bar" id="quizProgress"></div>
+            <span class="quiz__progress-text" id="quizProgressText">1 / 4</span>
+          </div>
+
+          <div class="quiz__step quiz__step--active" data-step="0">
+            <h3 class="quiz__question">Кто вы?</h3>
+            <div class="quiz__options">
+              <button type="button" class="quiz__option" data-q="role" data-v="expert">Эксперт или наставник</button>
+              <button type="button" class="quiz__option" data-q="role" data-v="marketer">Маркетолог или SMM</button>
+              <button type="button" class="quiz__option" data-q="role" data-v="creative">Творческий специалист</button>
+              <button type="button" class="quiz__option" data-q="role" data-v="business">Владелец бизнеса</button>
+              <button type="button" class="quiz__option" data-q="role" data-v="freelancer">Фрилансер</button>
+            </div>
+          </div>
+
+          <div class="quiz__step" data-step="1">
+            <h3 class="quiz__question">Что для вас важнее?</h3>
+            <div class="quiz__options">
+              <button type="button" class="quiz__option" data-q="goal" data-v="earn">Зарабатывать на новой услуге</button>
+              <button type="button" class="quiz__option" data-q="goal" data-v="automate">Автоматизировать свою работу</button>
+              <button type="button" class="quiz__option" data-q="goal" data-v="sell">Продавать AI-решения клиентам</button>
+              <button type="button" class="quiz__option" data-q="goal" data-v="both">И зарабатывать, и для себя</button>
+            </div>
+          </div>
+
+          <div class="quiz__step" data-step="2">
+            <h3 class="quiz__question">Какие задачи отнимают больше всего времени?</h3>
+            <div class="quiz__options">
+              <button type="button" class="quiz__option" data-q="task" data-v="content">Контент и SMM</button>
+              <button type="button" class="quiz__option" data-q="task" data-v="sales">Продажи и переписка</button>
+              <button type="button" class="quiz__option" data-q="task" data-v="expert">Работа с клиентами-экспертами</button>
+              <button type="button" class="quiz__option" data-q="task" data-v="ops">Рутина и планирование</button>
+            </div>
+          </div>
+
+          <div class="quiz__step" data-step="3">
+            <h3 class="quiz__question">Сколько часов в неделю готовы уделять?</h3>
+            <div class="quiz__options">
+              <button type="button" class="quiz__option" data-q="time" data-v="light">2–3 часа</button>
+              <button type="button" class="quiz__option" data-q="time" data-v="medium">5–7 часов</button>
+              <button type="button" class="quiz__option" data-q="time" data-v="intense">10+ часов</button>
+            </div>
+          </div>
+
+          <div class="quiz__result" id="quizResult" hidden>
+            <span class="quiz__result-label">Ваш результат</span>
+            <h3 class="quiz__result-title" id="resultTitle"></h3>
+            <div class="quiz__result-agents" id="resultAgents"></div>
+            <p class="quiz__result-earn" id="resultEarn"></p>
+            <p class="quiz__result-desc" id="resultDesc"></p>
+            <ul class="quiz__result-modules" id="resultModules"></ul>
+            <div class="quiz__result-actions">
+              <a href="https://neirogalina.ru/page245" class="btn btn--magnetic" target="_blank" rel="noopener noreferrer">Записаться на курс</a>
+              <button type="button" class="btn btn--ghost" id="quizRestart">Пройти снова</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why now -->
+    <section class="section section--why reveal">
+      <span class="section__ghost-num" aria-hidden="true">01</span>
+      <div class="container">
+        <div class="section__header">
+          <span class="section__label">Контекст</span>
+          <h2>Мир меняется быстрее,<br>чем многие успевают это заметить</h2>
+        </div>
+        <div class="why__grid">
+          <div class="why__text">
+            <p>Ещё недавно специалисты изучали нейросети ради интереса. Сегодня компании внедряют цифровых помощников в ежедневную работу.</p>
+            <p class="why__highlight">Те, кто умеет создавать такие решения, становятся востребованными специалистами нового поколения.</p>
+          </div>
+          <ul class="why__list">
+            <li>пишут контент</li>
+            <li>помогают в продажах</li>
+            <li>отвечают клиентам</li>
+            <li>анализируют информацию</li>
+            <li>обучают сотрудников</li>
+            <li>помогают руководителям принимать решения</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Audience -->
+    <section class="section reveal">
+      <span class="section__ghost-num" aria-hidden="true">02</span>
+      <div class="container">
+        <div class="section__header section__header--center">
+          <span class="section__label">Аудитория</span>
+          <h2>Кому подойдёт обучение</h2>
+        </div>
+        <div class="cards cards--3">
+          <article class="card">
+            <span class="card__icon">01</span>
+            <h3>Экспертам</h3>
+            <p>Психологам, коучам, специалистам помогающих профессий, наставникам.</p>
+          </article>
+          <article class="card">
+            <span class="card__icon">02</span>
+            <h3>Маркетологам и SMM</h3>
+            <p>Для расширения услуг и увеличения среднего чека.</p>
+          </article>
+          <article class="card">
+            <span class="card__icon">03</span>
+            <h3>Творческим специалистам</h3>
+            <p>Дизайнерам, блогерам, авторам, спикерам.</p>
+          </article>
+          <article class="card">
+            <span class="card__icon">04</span>
+            <h3>Владельцам бизнеса</h3>
+            <p>Для автоматизации процессов и создания собственной AI-команды.</p>
+          </article>
+          <article class="card">
+            <span class="card__icon">05</span>
+            <h3>Фрилансерам</h3>
+            <p>Для запуска новой востребованной услуги.</p>
+          </article>
+          <article class="card">
+            <span class="card__icon">06</span>
+            <h3>Тем, кто хочет зарабатывать на AI</h3>
+            <p>Даже без технического образования.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Results -->
+    <section class="section section--dark reveal">
+      <div class="container">
+        <div class="results-block">
+          <div class="section__header">
+            <span class="section__label">Результат</span>
+            <h2>После обучения<br>у вас будет</h2>
+          </div>
+          <ul class="checklist">
+          <li>Собственная цифровая команда помощников</li>
+          <li>Портфолио готовых AI-агентов</li>
+          <li>Навык создания решений под любой запрос</li>
+          <li>Понимание рынка и клиентов</li>
+          <li>Готовая схема поиска заказчиков</li>
+          <li>Более 50 готовых решений для запуска</li>
+          <li>Возможность использовать агентов для себя или продавать клиентам</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- What is agent -->
+    <section class="section section--agent reveal">
+      <div class="container">
+        <div class="agent-block">
+          <div class="agent-block__deco" aria-hidden="true">≠</div>
+          <div class="agent-block__content">
+            <span class="section__label">Суть</span>
+            <h2>Это не просто ChatGPT</h2>
+            <p>Большинство пользователей ограничиваются обычными запросами. Профессиональный ИИ-агент работает иначе.</p>
+          </div>
+          <ul class="agent-features">
+            <li>Работает по заданной роли</li>
+            <li>Использует собственную базу знаний</li>
+            <li>Соблюдает заданные инструкции</li>
+            <li>Решает конкретную задачу</li>
+            <li>Экономит часы работы</li>
+            <li>Помогает бизнесу получать результат быстрее</li>
+          </ul>
+        </div>
+        <p class="agent-note">В рамках программы вы научитесь создавать именно такие решения.</p>
+      </div>
+    </section>
+
+    <!-- Program -->
+    <section class="section section--program" id="program">
+      <div class="container">
+        <div class="section__header section__header--center">
+          <span class="section__label">Программа</span>
+          <h2>8 модулей — от первых клиентов до масштабирования</h2>
+        </div>
+        <div class="modules">
+          <details class="module" open>
+            <summary>
+              <span class="module__num">00</span>
+              <span class="module__title">Клиенты до начала обучения</span>
+            </summary>
+            <ul class="module__topics">
+              <li>Поиск клиентов</li>
+              <li>Востребованные ниши</li>
+              <li>Диагностика бизнеса</li>
+              <li>Коммерческие предложения</li>
+              <li>Первые продажи</li>
+            </ul>
+          </details>
+          <details class="module">
+            <summary>
+              <span class="module__num">01</span>
+              <span class="module__title">Фундамент AI-агентов</span>
+            </summary>
+            <ul class="module__topics">
+              <li>Архитектура агентов</li>
+              <li>Системные инструкции</li>
+              <li>Базы знаний</li>
+              <li>Работа с документами</li>
+              <li>Создание первого агента</li>
+            </ul>
+          </details>
+          <details class="module">
+            <summary>
+              <span class="module__num">02</span>
+              <span class="module__title">AI-агенты для маркетинга</span>
+            </summary>
+            <ul class="module__topics">
+              <li>SMM-стратег</li>
+              <li>Контент-маркетолог</li>
+              <li>Копирайтер</li>
+              <li>Pinterest-специалист</li>
+              <li>Сценарист Reels</li>
+              <li>Контент-планировщик</li>
+              <li>Аналитик контента</li>
+            </ul>
+          </details>
+          <details class="module">
+            <summary>
+              <span class="module__num">03</span>
+              <span class="module__title">AI-агенты для продаж</span>
+            </summary>
+            <ul class="module__topics">
+              <li>Менеджер по продажам</li>
+              <li>Генератор офферов</li>
+              <li>Диагност клиентских запросов</li>
+              <li>Специалист по прогревам</li>
+              <li>Обработчик возражений</li>
+              <li>Консультант по продуктам</li>
+            </ul>
+          </details>
+          <details class="module">
+            <summary>
+              <span class="module__num">04</span>
+              <span class="module__title">AI-агенты для экспертов</span>
+            </summary>
+            <ul class="module__topics">
+              <li>Помощник психолога</li>
+              <li>Помощник коуча</li>
+              <li>Помощник нейрографа</li>
+              <li>Методолог обучения</li>
+              <li>Создатель уроков</li>
+              <li>Помощник онлайн-школы</li>
+            </ul>
+          </details>
+          <details class="module">
+            <summary>
+              <span class="module__num">05</span>
+              <span class="module__title">Личные AI-агенты</span>
+            </summary>
+            <ul class="module__topics">
+              <li>Шеф-повар</li>
+              <li>Помощник по продажам на Авито</li>
+              <li>Планировщик дня</li>
+              <li>Помощник по покупкам</li>
+              <li>Консультант по путешествиям</li>
+              <li>Помощник по бюджету</li>
+              <li>Карьерный консультант</li>
+              <li>Семейный помощник</li>
+            </ul>
+          </details>
+          <details class="module">
+            <summary>
+              <span class="module__num">06</span>
+              <span class="module__title">AI-агенты для творческих профессий</span>
+            </summary>
+            <ul class="module__topics">
+              <li>Помощник блогера</li>
+              <li>Помощник дизайнера</li>
+              <li>Контент-редактор</li>
+              <li>Генератор идей</li>
+              <li>Креативный директор</li>
+              <li>Помощник автора</li>
+            </ul>
+          </details>
+          <details class="module">
+            <summary>
+              <span class="module__num">07</span>
+              <span class="module__title">Упаковка и готовые решения</span>
+            </summary>
+            <ul class="module__topics">
+              <li>Создание продукта</li>
+              <li>Передача клиенту</li>
+              <li>Настройка под нишу</li>
+              <li>Портфолио</li>
+              <li>Презентация услуг</li>
+            </ul>
+          </details>
+          <details class="module">
+            <summary>
+              <span class="module__num">08</span>
+              <span class="module__title">Монетизация</span>
+            </summary>
+            <ul class="module__topics">
+              <li>Ценообразование</li>
+              <li>Продажа услуг</li>
+              <li>Повторные продажи</li>
+              <li>Пакетные предложения</li>
+              <li>Масштабирование</li>
+            </ul>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Agents grid -->
+    <section class="section">
+      <div class="container">
+        <div class="section__header section__header--center">
+          <span class="section__label">Практика</span>
+          <h2>Какие агенты вы создадите</h2>
+        </div>
+        <div class="agents-grid">
+          <span data-agent>AI-продажник</span>
+          <span data-agent>SMM-стратег</span>
+          <span data-agent>Контент-маркетолог</span>
+          <span data-agent>Авито-консультант</span>
+          <span data-agent>Шеф-повар</span>
+          <span data-agent>Методолог</span>
+          <span data-agent>Помощник психолога</span>
+          <span data-agent>Генератор офферов</span>
+          <span data-agent>Pinterest-специалист</span>
+          <span data-agent>Помощник блогера</span>
+          <span data-agent>Личный ассистент</span>
+          <span data-agent>Контент-планировщик</span>
+        </div>
+        <p class="agents-note">И это лишь небольшая часть из более чем 50 готовых решений.</p>
+      </div>
+    </section>
+
+    <!-- Bonuses -->
+    <section class="section section--dark">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__label">Бонусы</span>
+          <h2>Каждый участник получает</h2>
+        </div>
+        <ul class="bonuses">
+          <li>Более 50 готовых схем AI-агентов</li>
+          <li>Агент по продаже агентов</li>
+          <li>Тёплый помощник для продаж</li>
+          <li>Универсальный конструктор новых агентов</li>
+          <li>Библиотеку продающих промптов</li>
+          <li>Шаблоны диагностики бизнеса</li>
+          <li>Список ниш, где AI-агенты продаются проще всего</li>
+          <li>Каталог «100 идей AI-агентов для создания и монетизации»</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Author -->
+    <section class="section section--author reveal">
+      <div class="container">
+        <div class="author">
+          <div class="author__photo">
+            <div class="author__frame" aria-hidden="true"></div>
+            <img
+              src="images/author.jpg"
+              alt="Галина Оноприенко — автор программы по созданию ИИ-агентов"
+              class="author__img"
+              width="396"
+              height="528"
+              loading="lazy"
+            >
+            <p class="author__years"><span>16</span> лет опыта</p>
+          </div>
+          <div class="author__info">
+            <span class="section__label">Автор программы</span>
+            <h2>Галина Оноприенко</h2>
+            <ul class="author__roles">
+              <li>Инструктор Нейрографики</li>
+              <li>Промпт-инженер</li>
+              <li>SMM-стратег</li>
+              <li>Контент-маркетолог</li>
+              <li>Создатель AI-агентов</li>
+              <li>Специалист по внедрению нейросетей в экспертный бизнес</li>
+              <li>Трекер по монетизации</li>
+              <li>Член руководящего состава Комитета НейроНаук и инновационных направлений</li>
+            </ul>
+            <p class="author__exp">16 лет опыта в онлайн-проектах, маркетинге и работе с экспертами.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Calculator -->
+    <section class="section section--calculator reveal" id="calculator">
+      <div class="container">
+        <div class="calc-layout">
+          <div class="calc-intro">
+            <span class="section__label">Калькулятор</span>
+            <h2>Сколько вы теряете без AI-агентов?</h2>
+            <p>Посчитайте, сколько времени и денег уходит на задачи, которые уже решают цифровые помощники.</p>
+          </div>
+
+          <div class="calc-panel" id="calcApp">
+            <div class="calc-field">
+              <label for="calcHours">Часов в неделю на рутину</label>
+              <div class="calc-slider-wrap">
+                <input type="range" id="calcHours" min="2" max="40" value="15" step="1">
+                <output id="calcHoursOut" class="calc-output">15 ч</output>
+              </div>
+            </div>
+
+            <div class="calc-field">
+              <label for="calcRate">Ваша стоимость часа, ₽</label>
+              <div class="calc-slider-wrap">
+                <input type="range" id="calcRate" min="500" max="5000" value="1000" step="100">
+                <output id="calcRateOut" class="calc-output">1 000 ₽</output>
+              </div>
+            </div>
+
+            <div class="calc-tasks">
+              <span class="calc-tasks__label">Что делаете вручную?</span>
+              <div class="calc-tasks__grid">
+                <label class="calc-task"><input type="checkbox" value="content" checked> Контент и посты</label>
+                <label class="calc-task"><input type="checkbox" value="sales" checked> Продажи и ответы</label>
+                <label class="calc-task"><input type="checkbox" value="plans"> Контент-планы</label>
+                <label class="calc-task"><input type="checkbox" value="docs"> Документы и КП</label>
+              </div>
+            </div>
+
+            <div class="calc-results">
+              <div class="calc-result">
+                <span class="calc-result__label">В месяц на рутину</span>
+                <span class="calc-result__value" id="calcMonthlyHours">60 ч</span>
+              </div>
+              <div class="calc-result calc-result--accent">
+                <span class="calc-result__label">Упущенный доход</span>
+                <span class="calc-result__value" id="calcLost">60 000 ₽</span>
+              </div>
+              <div class="calc-result">
+                <span class="calc-result__label">Курс окупается за</span>
+                <span class="calc-result__value" id="calcPayback">2 нед.</span>
+              </div>
+            </div>
+
+            <p class="calc-note" id="calcNote">
+              При рассрочке — всего <strong>2 500 ₽/мес</strong> вместо потери <strong id="calcLostShort">60 000 ₽</strong> каждый месяц.
+            </p>
+
+            <a href="https://neirogalina.ru/page245" class="btn btn--full btn--magnetic" target="_blank" rel="noopener noreferrer">Окупить за 2 недели — записаться</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="section section--pricing" id="pricing">
+      <div class="container">
+        <div class="section__header section__header--center">
+          <span class="section__label">Стоимость</span>
+          <h2>Инвестиция в навык будущего</h2>
+        </div>
+        <div class="pricing">
+          <div class="pricing__card pricing__card--main">
+            <div class="pricing__badge">До 20 июня</div>
+            <div class="pricing__amount">30 000 ₽</div>
+            <p class="pricing__after">После повышения — <strong>45 000 ₽</strong></p>
+            <p class="pricing__installment">Рассрочка на 12 мес — <strong>2 500 ₽/мес</strong></p>
+            <ul class="pricing__features">
+              <li>8 модулей обучения</li>
+              <li>50+ готовых AI-агентов</li>
+              <li>Бонусы и шаблоны</li>
+              <li>Поддержка и практика</li>
+            </ul>
+            <a href="https://neirogalina.ru/page245" class="btn btn--full btn--magnetic" target="_blank" rel="noopener noreferrer">Занять место на обучении</a>
+            <p class="pricing__note">Тариф «Практика» · рассрочка и поэтапная оплата</p>
+          </div>
+          <div class="pricing__card pricing__card--alumni">
+            <div class="pricing__badge pricing__badge--muted">Выпускникам</div>
+            <div class="pricing__amount pricing__amount--sm">5 000 ₽</div>
+            <p>Обновление программы для участников прошлых потоков</p>
+            <a href="https://neirogalina.ru/page237" class="btn btn--full btn--ghost" target="_blank" rel="noopener noreferrer">Записаться на обновление</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="container container--narrow">
+        <div class="section__header section__header--center">
+          <span class="section__label">FAQ</span>
+          <h2>Частые вопросы</h2>
+        </div>
+        <div class="faq">
+          <details class="faq__item">
+            <summary>Нужно ли уметь программировать?</summary>
+            <p>Нет. Программа построена так, чтобы освоить создание агентов без технического образования.</p>
+          </details>
+          <details class="faq__item">
+            <summary>Подойдёт ли новичкам?</summary>
+            <p>Да. Обучение начинается с основ и ведёт вас шаг за шагом к готовым решениям.</p>
+          </details>
+          <details class="faq__item">
+            <summary>Смогу ли я использовать агентов для себя?</summary>
+            <p>Да. Вы создадите личных помощников и цифровую команду для собственных задач.</p>
+          </details>
+          <details class="faq__item">
+            <summary>Можно ли продавать такие услуги?</summary>
+            <p>Да. Отдельный модуль посвящён монетизации, ценообразованию и масштабированию.</p>
+          </details>
+          <details class="faq__item">
+            <summary>Будут ли готовые шаблоны?</summary>
+            <p>Да, более 50 готовых схем и решений для быстрого запуска.</p>
+          </details>
+          <details class="faq__item">
+            <summary>Что делать, если уже проходил обучение?</summary>
+            <p>Для выпускников действует специальная стоимость — 5 000 рублей за обновление программы.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="section section--final reveal">
+      <div class="final__mesh" aria-hidden="true"></div>
+      <div class="container container--narrow">
+        <blockquote class="final-quote">
+          Возможно, через год AI-агенты будут такой же стандартной частью бизнеса, как сайт, CRM или социальные сети.
+        </blockquote>
+        <p class="final-text">
+          Вопрос только в том, будете ли вы пользоваться готовыми решениями других специалистов
+          или научитесь создавать их самостоятельно.
+        </p>
+        <div class="final-meta">
+          <span>📅 Старт 26 июня</span>
+          <span>🔥 До 20 июня — 30 000 ₽</span>
+        </div>
+        <a href="https://neirogalina.ru/page245" class="btn btn--magnetic" target="_blank" rel="noopener noreferrer">Присоединиться к программе</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span class="logo">ИИ-Агенты</span>
+      <p>© 2026 Галина Оноприенко. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
