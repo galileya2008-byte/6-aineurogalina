@@ -9,6 +9,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Onest:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Критические стили — работают даже если styles.css не загрузился */
+    .modal { display: none; }
+    .modal.is-open { display: flex; }
+    .cookie-banner:not(.is-visible) { display: none; }
+    button { font-family: inherit; }
+  </style>
 </head>
 <body>
   <div class="grain" aria-hidden="true"></div>
@@ -25,8 +32,10 @@
         <a href="#faq">FAQ</a>
         <button type="button" class="nav__contact" id="openContactNav">Написать мне</button>
       </nav>
-      <button type="button" class="btn btn--sm btn--ghost" id="openContact">Написать мне</button>
-      <a href="#pricing" class="btn btn--sm">Забронировать</a>
+      <div class="header__actions">
+        <button type="button" class="btn btn--sm btn--ghost" id="openContact">Написать мне</button>
+        <a href="#pricing" class="btn btn--sm">Забронировать</a>
+      </div>
       <button class="burger" id="burger" aria-label="Меню">
         <span></span><span></span>
       </button>
@@ -667,7 +676,7 @@
   </footer>
 
   <!-- Contact modal -->
-  <div class="modal" id="contactModal" aria-hidden="true">
+  <div class="modal" id="contactModal" aria-hidden="true" hidden>
     <div class="modal__overlay" data-close-modal></div>
     <div class="modal__dialog" role="dialog" aria-labelledby="modalTitle" aria-modal="true">
       <button type="button" class="modal__close" id="closeContact" aria-label="Закрыть">×</button>
