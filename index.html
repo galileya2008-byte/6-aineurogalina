@@ -23,7 +23,9 @@
         <a href="#calculator">Калькулятор</a>
         <a href="#pricing">Стоимость</a>
         <a href="#faq">FAQ</a>
+        <button type="button" class="nav__contact" id="openContactNav">Написать мне</button>
       </nav>
+      <button type="button" class="btn btn--sm btn--ghost" id="openContact">Написать мне</button>
       <a href="#pricing" class="btn btn--sm">Забронировать</a>
       <button class="burger" id="burger" aria-label="Меню">
         <span></span><span></span>
@@ -53,11 +55,10 @@
             и повседневной жизни.
           </p>
           <div class="hero__price">
-            <span class="hero__price-label">До 20 июня</span>
-            <span class="hero__price-value">30 000 ₽</span>
-            <span class="hero__price-old">45 000 ₽</span>
+            <span class="hero__price-label">Стоимость курса</span>
+            <span class="hero__price-value">45 000 ₽</span>
           </div>
-          <p class="hero__installment">Рассрочка на 12 мес — <strong>2 500 ₽/мес</strong></p>
+          <p class="hero__installment">Рассрочка на 12 мес — <strong>3 750 ₽/мес</strong></p>
           <div class="hero__tags">
             <span>Рассрочка</span>
             <span>Поэтапная оплата</span>
@@ -67,7 +68,7 @@
             <a href="https://neirogalina.ru/page245" class="btn btn--magnetic" target="_blank" rel="noopener noreferrer">Забронировать место</a>
             <a href="#quiz" class="btn btn--ghost">Пройти опрос</a>
           </div>
-          <p class="hero__alumni">Выпускникам прошлых потоков — <a href="https://neirogalina.ru/page237" target="_blank" rel="noopener noreferrer">обновление за 5 000 ₽</a></p>
+          <p class="hero__alumni">Выпускникам прошлых потоков — <a href="https://neirogalina.ru/page237" target="_blank" rel="noopener noreferrer">обновление за 7 500 ₽</a></p>
         </div>
         <div class="hero__visual" aria-hidden="true">
           <div class="hero__ring">
@@ -561,7 +562,7 @@
             </div>
 
             <p class="calc-note" id="calcNote">
-              При рассрочке — всего <strong>2 500 ₽/мес</strong> вместо потери <strong id="calcLostShort">60 000 ₽</strong> каждый месяц.
+              При рассрочке — всего <strong>3 750 ₽/мес</strong> вместо потери <strong id="calcLostShort">60 000 ₽</strong> каждый месяц.
             </p>
 
             <a href="https://neirogalina.ru/page245" class="btn btn--full btn--magnetic" target="_blank" rel="noopener noreferrer">Окупить за 2 недели — записаться</a>
@@ -579,10 +580,9 @@
         </div>
         <div class="pricing">
           <div class="pricing__card pricing__card--main">
-            <div class="pricing__badge">До 20 июня</div>
-            <div class="pricing__amount">30 000 ₽</div>
-            <p class="pricing__after">После повышения — <strong>45 000 ₽</strong></p>
-            <p class="pricing__installment">Рассрочка на 12 мес — <strong>2 500 ₽/мес</strong></p>
+            <div class="pricing__badge">Тариф «Практика»</div>
+            <div class="pricing__amount">45 000 ₽</div>
+            <p class="pricing__installment">Рассрочка на 12 мес — <strong>3 750 ₽/мес</strong></p>
             <ul class="pricing__features">
               <li>8 модулей обучения</li>
               <li>50+ готовых AI-агентов</li>
@@ -594,7 +594,7 @@
           </div>
           <div class="pricing__card pricing__card--alumni">
             <div class="pricing__badge pricing__badge--muted">Выпускникам</div>
-            <div class="pricing__amount pricing__amount--sm">5 000 ₽</div>
+            <div class="pricing__amount pricing__amount--sm">7 500 ₽</div>
             <p>Обновление программы для участников прошлых потоков</p>
             <a href="https://neirogalina.ru/page237" class="btn btn--full btn--ghost" target="_blank" rel="noopener noreferrer">Записаться на обновление</a>
           </div>
@@ -632,7 +632,7 @@
           </details>
           <details class="faq__item">
             <summary>Что делать, если уже проходил обучение?</summary>
-            <p>Для выпускников действует специальная стоимость — 5 000 рублей за обновление программы.</p>
+            <p>Для выпускников действует специальная стоимость — 7 500 рублей за обновление программы.</p>
           </details>
         </div>
       </div>
@@ -651,7 +651,7 @@
         </p>
         <div class="final-meta">
           <span>📅 Старт 26 июня</span>
-          <span>🔥 До 20 июня — 30 000 ₽</span>
+          <span>🔥 Стоимость — 45 000 ₽</span>
         </div>
         <a href="https://neirogalina.ru/page245" class="btn btn--magnetic" target="_blank" rel="noopener noreferrer">Присоединиться к программе</a>
       </div>
@@ -661,9 +661,71 @@
   <footer class="footer">
     <div class="container footer__inner">
       <span class="logo">ИИ-Агенты</span>
+      <button type="button" class="footer__contact" id="openContactFooter">Написать мне</button>
       <p>© 2026 Галина Оноприенко. Все права защищены.</p>
     </div>
   </footer>
+
+  <!-- Contact modal -->
+  <div class="modal" id="contactModal" aria-hidden="true">
+    <div class="modal__overlay" data-close-modal></div>
+    <div class="modal__dialog" role="dialog" aria-labelledby="modalTitle" aria-modal="true">
+      <button type="button" class="modal__close" id="closeContact" aria-label="Закрыть">×</button>
+
+      <div class="modal__content" id="contactFormWrap">
+        <span class="section__label">Связаться</span>
+        <h2 class="modal__title" id="modalTitle">Написать мне</h2>
+        <p class="modal__desc">Оставьте контакты — отвечу на вопросы о программе и помогу выбрать тариф.</p>
+
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="contact-form__field">
+            <label for="contactName">Имя</label>
+            <input type="text" id="contactName" name="name" placeholder="Как к вам обращаться" required autocomplete="name">
+            <span class="contact-form__error" data-error="name"></span>
+          </div>
+
+          <div class="contact-form__field">
+            <label for="contactEmail">Электронная почта</label>
+            <input type="email" id="contactEmail" name="email" placeholder="example@mail.ru" required autocomplete="email">
+            <span class="contact-form__error" data-error="email"></span>
+          </div>
+
+          <div class="contact-form__field">
+            <label for="contactPhone">Номер телефона</label>
+            <input type="tel" id="contactPhone" name="phone" placeholder="+7 (999) 000-00-00" required autocomplete="tel">
+            <span class="contact-form__error" data-error="phone"></span>
+          </div>
+
+          <label class="contact-form__consent">
+            <input type="checkbox" id="contactConsent" name="consent" required>
+            <span>Даю согласие на <a href="https://neirogalina.ru/" target="_blank" rel="noopener noreferrer">обработку моих персональных данных</a></span>
+          </label>
+          <span class="contact-form__error" data-error="consent"></span>
+
+          <button type="submit" class="btn btn--full btn--magnetic" id="contactSubmit">Отправить</button>
+        </form>
+      </div>
+
+      <div class="modal__success" id="contactSuccess" hidden>
+        <span class="modal__success-icon">✓</span>
+        <h2 class="modal__title">Спасибо!</h2>
+        <p class="modal__desc">Ваша заявка отправлена. Свяжусь с вами в ближайшее время.</p>
+        <button type="button" class="btn btn--full" data-close-modal>Закрыть</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cookie notice -->
+  <div class="cookie-banner" id="cookieBanner" role="dialog" aria-label="Уведомление о cookies" aria-hidden="true">
+    <div class="cookie-banner__inner">
+      <p class="cookie-banner__text">
+        Мы используем файлы cookie для корректной работы сайта и улучшения вашего опыта.
+        Продолжая пользоваться сайтом, вы соглашаетесь с их использованием.
+        <a href="https://neirogalina.ru/" target="_blank" rel="noopener noreferrer">Подробнее</a>
+      </p>
+      <button type="button" class="btn btn--sm cookie-banner__btn" id="cookieAccept">Принять</button>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
