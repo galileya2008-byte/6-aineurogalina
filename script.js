@@ -283,8 +283,8 @@ const quizResults = {
   const checkboxes = document.querySelectorAll('.calc-task input');
   if (!hoursInput || !rateInput) return;
 
-  const COURSE_PRICE = 45000;
-  const INSTALLMENT_MONTHLY = 3750;
+  const COURSE_PRICE = 30000;
+  const INSTALLMENT_MONTHLY = 2500;
 
   function formatNum(n) {
     return n.toLocaleString('ru-RU');
@@ -321,7 +321,7 @@ const quizResults = {
     if (ctaBtn) {
       ctaBtn.textContent = paybackWeeks <= 4
         ? `Окупить за ${paybackWeeks} нед. — записаться`
-        : 'Записаться на курс — 45 000 ₽';
+        : 'Записаться на курс — 30 000 ₽';
     }
   }
 
